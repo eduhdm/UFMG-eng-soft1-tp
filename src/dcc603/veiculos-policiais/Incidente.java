@@ -23,31 +23,31 @@ public class Incidente {
     return this.localizacao;
   }
 
-  public Array getVeiculosNecessarios() {
+  public Veiculos getVeiculosNecessarios() {
     return this.veiculosNecessarios;
   }
 
-  public Array getServicosDeEmergencia() {
+  public Veiculos getServicosDeEmergencia() {
     return this.servicosDeEmergencia;
   }
 
-  public String setTipo(String tipo) {
+  public void setTipo(String tipo) {
     this.tipo = tipo;
   }
 
-  public String setUrgencia(String urgencia) {
+  public void setUrgencia(String urgencia) {
     this.urgencia = urgencia;
   }
 
-  public String setLocalizacao(String localizacao) {
+  public void setLocalizacao(String localizacao) {
     this.localizacao = localizacao;
   }
 
-  public Array setVeiculosNecessarios(Array veiculosNecessarios) {
+  public void setVeiculosNecessarios(Array veiculosNecessarios) {
     this.veiculosNecessarios = veiculosNecessarios;
   }
 
-  public Array setServicosDeEmergencia(Array servicosDeEmergencia) {
+  public void setServicosDeEmergencia(Array servicosDeEmergencia) {
     this.servicosDeEmergencia = servicosDeEmergencia;
   }
 

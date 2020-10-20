@@ -1,3 +1,4 @@
+package dcc603.veiculos-policiais;
 
 public class Servicos {
   public String nome;

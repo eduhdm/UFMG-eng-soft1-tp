@@ -7,7 +7,7 @@ public class Atendente extends Funcionario {
     return this.status;
   }
 
-  public String setStatus() {
+  public void setStatus() {
     this.status = status;
   }
 
