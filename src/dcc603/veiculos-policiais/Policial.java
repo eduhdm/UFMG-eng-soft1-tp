@@ -1,7 +1,7 @@
 package dcc603.veiculos-policiais;
 
 public class Policial extends Funcionario {
-  private string statusPolicial = StatusPolicial.DISPONIVEL;
+  private String statusPolicial = StatusPolicial.DISPONIVEL;
 
   public Policial(Funcionario funcionario) {
     super(funcionario.nome, funcionario.nomeDepartamento, funcionario.id, TipoFuncionario.POLICIAL);

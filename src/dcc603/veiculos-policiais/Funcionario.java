@@ -1,10 +1,10 @@
 package dcc603.veiculos-policiais;
 
 public class Funcionario {
-  private String tipoFuncionario;
-  private String nome;
-  private String nomeDepartamento;
-  private String id;
+  protected String tipoFuncionario;
+  protected String nome;
+  protected String nomeDepartamento;
+  protected String id;
 
   public Funcionario(
     String nome,

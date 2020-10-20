@@ -1,9 +1,9 @@
 package dcc603.veiculos-policiais;
 
 public class Veiculo {
-  private string tipoVeiculo = TipoVeiculo.CARRO;
-  private string statusVeiculo = StatusVeiculo.DISPONIVEL;
-  private string localizacaoVeiculo;
+  private String tipoVeiculo = TipoVeiculo.CARRO;
+  private String statusVeiculo = StatusVeiculo.DISPONIVEL;
+  private String localizacaoVeiculo;
 
   public Veiculo(String tipoVeiculo, String statusVeiculo, String localizacaoVeiculo) {
     this.tipoVeiculo = tipoVeiculo;
@@ -23,15 +23,15 @@ public class Veiculo {
     this.localizacaoVeiculo = localizacaoVeiculo;
   }
 
-  public String setTipoVeiculo() {
+  public String getTipoVeiculo() {
     return this.tipoVeiculo;
   }
 
-  public String setStatusVeiculo() {
+  public String getStatusVeiculo() {
     return this.statusVeiculo;
   }
 
-  public String setLocalizacaoVeiculo() {
+  public String getLocalizacaoVeiculo() {
     return this.localizacaoVeiculo;
   }
 
