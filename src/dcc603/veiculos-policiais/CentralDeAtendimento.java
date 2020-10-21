@@ -26,7 +26,7 @@ public class CentralDeAtendimento {
     this.atendentes = atendentes;
   }
 
-  public setDepartamentos void setDepartamentoPolicais(DepartamentoPolicial[] departamentos) {
+  public void setDepartamentos(DepartamentoPolicial[] departamentos) {
     this.departamentos = departamentos;
   }
 
