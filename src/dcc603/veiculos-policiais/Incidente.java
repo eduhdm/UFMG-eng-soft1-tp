@@ -5,11 +5,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Incidente {
-  public String tipo;
-  public String urgencia;
-  public String localizacao;
-  public Veiculos veiculosNecessarios;
-  public Servicos servicosDeEmergencia;
+  private String tipo;
+  private String urgencia;
+  private String localizacao;
+  private Veiculos[] veiculosNecessarios;
+  private Servico[] servicosDeEmergencia;
+
+  public Incidente(
+    String tipo,
+    String urgencia,
+    String localizacao,
+    Veiculos[] veiculosNecessarios,
+    Servico[] servicosDeEmegencia,
+  ) {
+    this.tipo = tipo;
+    this.urgencia = urgencia;
+    this.localizacao = localizacao;
+    this.veiculosNecessarios = veiculosNecessarios;
+    this.servicosDeEmegencia = servicosDeEmegencia;
+  }
 
   public String getTipo() {
     return this.tipo;
@@ -23,11 +37,11 @@ public class Incidente {
     return this.localizacao;
   }
 
-  public Veiculos getVeiculosNecessarios() {
+  public Veiculos[] getVeiculosNecessarios() {
     return this.veiculosNecessarios;
   }
 
-  public Veiculos getServicosDeEmergencia() {
+  public Veiculos[] getServicosDeEmergencia() {
     return this.servicosDeEmergencia;
   }
 
@@ -43,11 +57,11 @@ public class Incidente {
     this.localizacao = localizacao;
   }
 
-  public void setVeiculosNecessarios(Array veiculosNecessarios) {
+  public void setVeiculosNecessarios(Veiculos[] veiculosNecessarios) {
     this.veiculosNecessarios = veiculosNecessarios;
   }
 
-  public void setServicosDeEmergencia(Array servicosDeEmergencia) {
+  public void setServicosDeEmergencia(Servico[] servicosDeEmergencia) {
     this.servicosDeEmergencia = servicosDeEmergencia;
   }
 

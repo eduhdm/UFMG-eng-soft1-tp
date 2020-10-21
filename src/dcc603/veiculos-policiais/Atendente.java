@@ -1,7 +1,16 @@
 package dcc603.veiculos-policiais;
 
 public class Atendente extends Funcionario {
-  public string status;
+  public String status;
+
+  public Atendente(Funcionario funcionario) {
+    super(funcionario.nome, funcionario.nomeDepartamento, funcionario.id, TipoFuncionario.ATENDENTE);
+
+    this.tipoVeiculo = tipoVeiculo;
+    this.statusVeiculo = statusVeiculo;
+    this.localizacaoVeiculo = localizacaoVeiculo;
+    this.status = TipoStatus.EM_CHAMADA;
+  }
 
   public String getStatus() {
     return this.status;
@@ -11,14 +20,15 @@ public class Atendente extends Funcionario {
     this.status = status;
   }
 
-  public void cadastrarIncidente(
-    String tipo, 
-    String urgencia, 
+  public Incidente cadastrarIncidente(
+    String tipo,
+    String urgencia,
     String localizacao,
-    Array veiculosNecessarios,
-    Servicos servicosDeEmegencia
+    Veiculo veiculosNecessarios,
+    Servico servicosDeEmegencia,
   ) {
-    new Incidente(tipo,
+    new Incidente (
+      tipo,
       urgencia,
       localizacao,
       veiculosNecessarios,
@@ -26,12 +36,16 @@ public class Atendente extends Funcionario {
     );
   }
 
-  public void alertarServicosEmergenciais(Servicos servicosDeEmegencia) {
+  public void alertarServicosEmergenciais(Servico servicosDeEmegencia) {
     servicosDeEmegencia.ligarServiço();
   }
 
-  public enum TipoStatus {
-    EM_CHAMADA,
-    DISPONIVEL,
+  public boolean isDisponivel() {
+    return TipoStatus.DISPONIVEL;
   }
+}
+
+public enum TipoStatus {
+  EM_CHAMADA,
+  DISPONIVEL,
 }
