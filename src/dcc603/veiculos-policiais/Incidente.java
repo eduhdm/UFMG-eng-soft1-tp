@@ -1,6 +1,7 @@
 package dcc603.veiculos-policiais;
 package com.zetcode;
 
+import enums.TipoUrgencia;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,11 +64,5 @@ public class Incidente {
 
   public void setServicosDeEmergencia(Servico[] servicosDeEmergencia) {
     this.servicosDeEmergencia = servicosDeEmergencia;
-  }
-
-  public enum TipoUrgercia {
-    BAIXA,
-    MÉDIA,
-    ALTA,
   }
 }

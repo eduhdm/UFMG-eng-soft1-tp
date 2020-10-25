@@ -1,5 +1,7 @@
 package dcc603.veiculos-policiais;
 
+import enums.tipoFuncionario;
+
 public class Funcionario {
   protected String tipoFuncionario;
   protected String nome;
@@ -50,9 +52,4 @@ public class Funcionario {
   public void setTipoFuncionario(String tipoFuncionario) {
     this.tipoFuncionario = tipoFuncionario;
   }
-}
-
-public enum TipoFuncionario {
-  POLICIAL,
-  ATENDENTE,
 }

@@ -42,7 +42,7 @@ public class CentralDeAtendimento {
     return atendentesDisponiveis;
   }
 
-  public alocarChamado(Chamado chamado) {
+  public void alocarChamado(Chamado chamado) {
     var atendentesDisponiveis = getAtendentesDisponiveis();
     var atendente = atendentesDisponiveis[0];
 
